@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4e3;
+    text-align: center;
+}
+
+/* Header Styling */
+h2 {
+    color: #d56f3e;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+span {
+    color: #9d6f24;
+}
+
+/* Pet Cards Section */
+#pets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    width: 350px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Text Styling */
+h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #3c787e;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #2b5f64;
+}
+
+/* Footer */
+h4 {
+    text-align: right;
+    color: #3c787e;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #pets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
